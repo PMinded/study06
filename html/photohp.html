@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c1d52818cc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Gamja+Flower&family=Kanit:wght@500&family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <style>
+        body{
+            width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            width: 1600px;
+            height: 180px;
+            border: 0.1px dotted black;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(246, 255, 220);
+        }
+        div.title{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-left: 50px;
+            
+        }
+        div.title p{
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        div.menu ul{
+            margin-left: 150px;
+            list-style: none;
+            width: 700px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 40px;
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        div.icon{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            font-size: 40px;
+        }
+        div.middle{
+            margin-top: 10px;
+            display: flex;
+        }
+        nav{
+            width: 350px;
+            height: 820px;
+            border: 0.1px dotted black;
+            background-color: rgb(155, 250, 155);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        div.blank1{
+            width: 50px;
+        }
+        div.mp{
+            width:800px;
+            background-color: rgb(155, 250, 155);
+            border: 0.1px dotted black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        div.blank2{
+            width: 50px;
+        }
+        aside{
+            width: 350px;
+            height: 820px;
+            border: 0.1px dotted black;
+            background-color: rgb(155, 250, 155);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        div.mp_title{
+            font-size: 30px;
+        }
+        div.info{
+            width: 780px;
+            box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+            background-color: rgb(238, 238, 238);
+            display: flex;
+            flex-direction: column;
+        }
+        div.info p{
+            margin: 5px;
+        }
+        input{
+            border: none;
+            height: 40px;
+            margin-left: 5px;
+        }
+        div.input_pnum{
+            display: flex;
+        }
+        div.verification{
+            width: 190px;
+            height: 40px;
+            background-color: rgb(45, 253, 45);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.submit{
+            width: 770px;
+            height: 40px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            background-color: rgb(45, 253, 45);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            width: 1600px;
+            height: 150px;
+            margin-top: 5px;
+            border: 0.1px dotted black;
+            background-color: rgb(251, 255, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <i class="fa-solid fa-camera-retro"></i>
+            <p>&nbsp;MIRE PHOTO</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </header>
+    <div class="middle">
+        <nav>
+            <p><b>NAV</b></p>
+        </nav>
+        <div class="blank1"></div>
+        <div class="mp">
+            <div class="mp_title">
+                <p><b>MIRE PICTURE</b></p>
+            </div>
+            <div class="info">
+                <p><b>아이디</b></p>
+                <div class="email">
+                    <input type="text" name="id" id="id" size="70">
+                    <input type="text" name="email" id="email" placeholder="@naver.com" size="29">      
+                </div>
+                <p><b>비밀번호</b></p>
+                <input type="password" name="pw" id="pw">
+                <p><b>비밀번호 재확인</b></p>
+                <input type="password" name="repw" id="repw">
+                <p><b>이름</b></p>
+                <input type="text" name="name" id="name">
+                <p><b>생년월일</b></p>
+                <div class="bday">
+                    <input type="text" name="year" id="year" size="31" placeholder="년(4자)">
+                    <input type="text" name="month" id="month" size="31" placeholder="월">
+                    <input type="text" name="day" id="day" size="31" placeholder="일">
+                </div>
+                <p><b>성별</b></p>
+                <input type="text" name="gender" id="gender" placeholder="성별">
+                <p><b>본인확인 이메일</b>(선택)</p>
+                <input type="email" name="email" id="email" placeholder="선택입력">
+                <p><b>휴대전화</b></p>
+                <input type="text" name="pnum" id="pnum" placeholder="대한민국 +82">
+                <div class="input_pnum">
+                    <input type="tel" name="inputpn" id="inputpn" placeholder="전화번호 입력" size="78">
+                    <div class="verification">
+                        <p>인증번호 받기</p>
+                    </div>
+                </div>
+                <input type="text" name="verification_num" id="verification_num" placeholder="인증번호를 입력하세요">
+                <div class="submit">
+                    <p>가입하기</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="blank2"></div>
+        <aside>
+            <p><b>ASIDE</b></p>
+        </aside>
+    </div>
+    <footer>
+        <p><b>FOOTER</b></p>
+    </footer>
+</body>
+</html>
